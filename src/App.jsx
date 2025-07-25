@@ -64,7 +64,6 @@ const App = () => {
   const correctCount = selected.filter((sel, idx) => sel === questions[idx].answer).length;
   const falseCount = selected.filter((sel, idx) => sel !== undefined && sel !== questions[idx].answer).length;
   const unmarkedCount = selected.filter((sel) => sel === undefined).length;
-  // const unmar = selected.filter((sel, idx) => sel !== undefined && sel !== questions[idx].answer).length;
 
   const handleOption = idx => {
     const updated = [...selected];
